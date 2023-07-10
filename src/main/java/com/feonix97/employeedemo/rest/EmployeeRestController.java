@@ -7,13 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * obsolete, use Spring Data Rest for automatic controllers instead
- */
-//@RestController
-//@RequestMapping("/api")
+@RestController
+@RequestMapping("/api")
 public class EmployeeRestController {
-    /*private final EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     @Autowired
     public EmployeeRestController(EmployeeService employeeService) {
@@ -69,5 +66,5 @@ public class EmployeeRestController {
         employeeService.deleteById(employeeId);
 
         return "Deleted employee id - " + employeeId;
-    }*/
+    }
 }
